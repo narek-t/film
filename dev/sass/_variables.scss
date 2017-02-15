@@ -1,4 +1,65 @@
-$mainColor: #333;
-$fontFamily: Helvetica, Arial, sans-serif;
-$linkColor: #699;
-$bgColor: #f8f8f8;
+@font-face {
+    font-family: 'bebas';
+    src: url('../fonts/bebasneue_bold.woff2') format('woff2'),
+         url('../fonts/bebasneue_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas';
+    src: url('../fonts/bebasneue_regular.woff2') format('woff2'),
+         url('../fonts/bebasneue_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/subset-GothamPro-Medium.woff2') format('woff2'),
+		url('../fonts/subset-GothamPro-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/subset-GothamPro-Bold.woff2') format('woff2'),
+		url('../fonts/subset-GothamPro-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/subset-GothamPro.woff2') format('woff2'),
+		url('../fonts/subset-GothamPro.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'lazy';
+    src: url('../fonts/lazy.woff2') format('woff2'),
+         url('../fonts/lazy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Baskerville Cyrillic';
+	src: url('../fonts/subset-BaskervilleCyrillic.woff2') format('woff2'),
+		url('../fonts/subset-BaskervilleCyrillic.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'miliolight';
+    src: url('../fonts/tipo_pepel_-_miliolight.woff2') format('woff2'),
+         url('../fonts/tipo_pepel_-_miliolight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$bebas: 'bebas';
+$gotham: 'Gotham Pro';
+$lazy: 'lazy';
+$bask: 'Baskerville Cyrillic';
+$milio: 'miliolight';
+
+$transition: all .3s ease-in-out;
+
