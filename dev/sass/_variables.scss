@@ -1,3 +1,10 @@
+$bebas: 'bebas';
+$gotham: 'Gotham Pro';
+$lazy: 'lazy';
+$bask: 'Baskerville Cyrillic';
+$milio: 'miliolight';
+$transition: all .3s ease-in-out;
+
 @font-face {
     font-family: 'bebas';
     src: url('../fonts/bebasneue_bold.woff2') format('woff2'),
@@ -34,6 +41,13 @@
 	font-style: normal;
 }
 @font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/subset-GothamPro-Light.woff2') format('woff2'),
+		url('../fonts/subset-GothamPro-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
     font-family: 'lazy';
     src: url('../fonts/lazy.woff2') format('woff2'),
          url('../fonts/lazy.woff') format('woff');
@@ -55,11 +69,46 @@
     font-style: normal;
 }
 
-$bebas: 'bebas';
-$gotham: 'Gotham Pro';
-$lazy: 'lazy';
-$bask: 'Baskerville Cyrillic';
-$milio: 'miliolight';
+.slick-slide,
+.slick-slide * { 
+	outline: none !important;
+}
 
-$transition: all .3s ease-in-out;
+.btn {
+	display: inline-block;
+	height: 50px;
+	border-radius: 2px;
+	text-align: center;
+	border: 2px solid transparent;
+	line-height: 52px;
+	font: 700 20px/50px $bebas;
+	text-decoration: none;
+	padding: 0 45px;
+	margin: 0 10px;
+	letter-spacing: .1em;
+	transition: $transition;
+	min-width: 200px;
+}
+
+.btn--green {
+	color: #fff;
+	background: #9ccc65;
+	border-color: #9ccc65;
+	&:hover {
+		background: #fff;
+		color: #333333;
+	}
+}
+
+.btn--transparent {
+	background: #fff;
+	border-color: #9ccc65;
+	color: #333333;
+	&:hover {
+		color: #fff;
+		background: #9ccc65;
+	}
+}
+
+
 
