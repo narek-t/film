@@ -110,5 +110,27 @@ $transition: all .3s ease-in-out;
 	}
 }
 
+.btn--black {
+	background: #fff;
+	border-color: #000;
+	color: #333333;
+	&:hover {
+		color: #fff;
+		background: #9ccc65;
+		border-color: #9ccc65;
+	}
+}
+
+.btn--white {
+	background: #fff;
+	border-color: #fff;
+	color: #333333;
+	&:hover {
+		color: #fff;
+		background: #9ccc65;
+		border-color: #9ccc65;
+	}
+}
+
 
 

@@ -4,9 +4,10 @@
 @import "_slick.scss";
 
 body {
-	font: 16px/28px $gotham;
+	font: 16px/24px $gotham;
 	color: #333333;
-	background: #f8f6f3;
+	background: #fefdfb;
+	letter-spacing: 0.05em;
 }
 
 .site-header {
@@ -278,7 +279,6 @@ body {
 	position: relative;
 	z-index: 1;
 	margin-top: -40px;
-
 	&__helper {
 		background: url(../img/home-slider.jpg) bottom center no-repeat;
 		transform: rotate(1deg);
@@ -286,6 +286,7 @@ body {
 		padding-left: 10px;
 		margin-top: 20px;
 		padding-bottom: 80px;
+		margin-bottom: 20px;
 	}
 	&__inner {
 		transform: rotate(-1deg);
@@ -358,6 +359,174 @@ body {
 		&.slick-next {
 			background: url(../img/trailer-slider-r.png);
 			right: 0;
+		}
+	}
+}
+
+.random-quote {
+	position: absolute;
+	width: 256px;
+	text-align: center;
+	color: #3f0da4;
+	transform: rotate(-6deg);
+	&__text {
+		font: 32px/36px $lazy;
+	}
+	&__author {
+		margin-top: 15px;
+		font: 300 18px $gotham;
+	}
+}
+
+.about {
+	padding: 80px 0;
+	background: url(../img/header-paper.png) center center no-repeat;
+	.random-quote:first-of-type {
+		bottom: 10px;
+	}
+	.random-quote:nth-of-type(2) {
+		right: 0;
+		top: 50%;
+	}
+	&__top {
+		position: relative;
+	}
+	&__title {
+		letter-spacing: 0.05em;
+		font: 700 60px $bebas;
+		text-transform: uppercase;
+		text-align: center;
+		span {
+			position: relative;
+			&::after,
+			&::before {
+				content: '';
+				width: 200px;
+				height: 2px;
+				background: #44424d;
+				position: absolute;
+				top: 50%;
+				margin-top: -1px;
+			}
+			&::after {
+				right: -260px;
+			}
+			&::before {
+				left: -260px;
+			}
+		}
+	}
+	&__description {
+		font: 16px/28px $gotham;
+		text-align: center;
+		color: #333333;
+		letter-spacing: 0.05em;
+	}
+	.links-wrap {
+		margin-top: 50px;
+		text-align: center;
+	}
+	&__links {
+		margin-top: 100px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		&--item {
+			width: 48%;
+			position: relative;
+			text-decoration: none;
+			&:hover {
+				.about__links--item-description {
+					background: rgba(180, 215, 124, 1);
+				}
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			&-description {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				background: rgba(180, 215, 124, .8);
+				text-align: center;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				color: #fff;
+				font: 700 20px $bebas;
+				padding: 10px 0;
+				transition: $transition;
+			}
+		}
+	}
+}
+
+.authors-wrapper {
+	overflow: hidden;
+}
+
+.author__subheading {
+	font: 700 40px $bebas;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 80px 0 30px;
+}
+
+.authors {
+	background: url(../img/authors-bg.jpg) top center no-repeat;
+	transform: rotate(1deg);
+	margin: 20px 0 20px -10px;
+	padding: 60px 0 60px 10px;
+	.links-wrap {
+		text-align: center;
+	}
+	&__inner {
+		transform: rotate(-1deg);
+	}
+	&__title {
+		letter-spacing: 0.05em;
+		font: 700 60px $bebas;
+		text-transform: uppercase;
+		text-align: center;
+		span {
+			position: relative;
+			&::after,
+			&::before {
+				content: '';
+				width: 200px;
+				height: 2px;
+				background: #44424d;
+				position: absolute;
+				top: 50%;
+				margin-top: -1px;
+			}
+			&::after {
+				right: -260px;
+			}
+			&::before {
+				left: -260px;
+			}
+		}
+	}
+	&__top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		&--item {
+			width: 48%;
+			margin: 0;
+			font: 16px/24px $gotham;
+		}
+	}
+	&__team {
+		text-align: center;
+		list-style-type: none;
+		margin: 0 0 50px;
+		padding: 0;
+		li {
+			margin-bottom: 12px;
 		}
 	}
 }
