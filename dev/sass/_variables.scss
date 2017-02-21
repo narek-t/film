@@ -132,5 +132,28 @@ $transition: all .3s ease-in-out;
 	}
 }
 
+.btn--dark-green {
+	background: #4dbc8c;
+	border-color: #4dbc8c;
+	font-family: $gotham;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 12px;
+	color: #fff;
+	&:hover {
+		background: #fff;
+		color: #333;
+	}
+}
 
+.btn--yellow {
+	background: #ffe578;
+	border-color: #ffe578;
+	color: #333333;
+	&:hover {
+		color: #fff;
+		background: #9ccc65;
+		border-color: #9ccc65;
+	}
+}
 
