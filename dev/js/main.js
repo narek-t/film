@@ -22,9 +22,6 @@ $(document).ready(function() {
 		slidesToShow: 5,
 		slidesToScroll: 1
 	});
-
-
-
 	$('.single-slider__thumbs .img-wrap').click(function(event) {
 		var src = $(this).data('src');
 		var videoUrl = $(this).data('url');
@@ -34,6 +31,26 @@ $(document).ready(function() {
 		} else {
 			$(this).parents('.act-slider').find('.single-video').attr('src', videoUrl);
 		}
+	});
+
+	$('.book-slider__inner').slick({
+		asNavFor: '.book-slider__thumbs',
+
+	});
+	$('.book-slider__thumbs').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.book-slider__inner',
+		focusOnSelect: true,
+		arrows: false,
+	});
+
+	$('.book-slider__data').slick();
+
+	$('.questions__list .heading').click(function(event) {
+		event.preventDefault();
+		$('.questions__list').find('.active').removeClass('active');
+		$(this).parents('li').addClass('active');
 	});
 
 
