@@ -53,5 +53,27 @@ $(document).ready(function() {
 		$(this).parents('li').addClass('active');
 	});
 
+	$('.about__links--item').click(function(event) {
+		event.preventDefault();
+		$('.about__links--item').removeClass('active');
+		$(this).addClass('active');
+		var index = $(this).index();
+		$('.gallery__page--tab').removeClass('active');
+		$('.gallery__page-tabs .gallery__page--tab').eq(index).addClass('active');
+	});
+
+
+	$('.gallery__page__list').magnificPopup({
+		fixedContentPos: true,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		mainClass: 'act-popup',
+		delegate: 'a',
+		closeBtnInside: true,
+		gallery: {
+			enabled: true
+		},
+	});
+
 
 });
