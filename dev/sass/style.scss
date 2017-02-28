@@ -230,6 +230,9 @@ body {
 			font: 14px $gotham;
 			color: #44424d;
 		}
+		.btn--white {
+			border-color: #9ccc65;
+		}
 	}
 }
 
@@ -500,6 +503,18 @@ body {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: flex-end;
+		.person__description {
+			text-align: center;
+			margin-top: 20px;
+		}
+		.person__name {
+			font: 700 20px $bebas;
+			margin: 0 0 5px;
+		}
+		.actor__name {
+			font: 300 12px $gotham;
+			margin: 0;
+		}
 		&-item {
 			position: relative;
 			display: inline-block;
@@ -557,18 +572,7 @@ body {
 			}
 		}
 	}
-	.person__description {
-		text-align: center;
-		margin-top: 20px;
-	}
-	.person__name {
-		font: 700 20px $bebas;
-		margin: 0 0 5px;
-	}
-	.actor__name {
-		font: 300 12px $gotham;
-		margin: 0;
-	}
+	
 }
 
 .authors-wrapper {
@@ -1681,9 +1685,89 @@ body {
 
 
 
+.history__page {
+	.links-wrap {
+		text-align: center;
+		margin: 50px 0;
+	}
+	.description a {
+		color: #fff;
+	}
+	.authors__page-helper {
+		padding: 45px 0;
+	}
+}
 
+.history__content {
+	background: url(../img/header-paper.png) bottom center no-repeat;
+	padding-bottom: 105px;
+	p a {
+		color: #5bb68f;
+	}
+	p {
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	p.subheading {
+		font: 700 20px $bebas;
+		text-transform: uppercase;
+	}
+	&-inner {
+		position: relative;
+	}
+	.blog-crow2 {
+		position: absolute;
+		top: 50%;
+		left: -100px;
+		max-width: 450px;
+	}
+	.random-quote:first-of-type {
+		left: 0;
+		top: 10%;
+	}
+	.random-quote:nth-of-type(2) {
+		right: 0;
+		top: 40%;
+	}
+}
 
+.gallery__part {
+	margin: 70px 0 30px;
+	.gallery__page__list {
+		margin-top: 30px;
+	}
+	.persons__list {
+		padding: 0 50px;
+	}
+	.links-wrap {
+		margin-top: 40px;
+		text-align: center;
+	}
+}
 
+.history__page-helper {
+	background: url(../img/history-bg.jpg) bottom center no-repeat;
+}
+
+.gift-wrapper {
+	img {
+		float: left;
+	}
+	.gift-description {
+		margin-left: 470px;
+		margin-top: 50px;
+	}
+	.note {
+		display: block;
+		font-size: 14px;
+		margin-top: 30px;
+	}
+	.links-wrap {
+		text-align: left;
+		margin-top: 10px;
+	}
+}
 
 
 

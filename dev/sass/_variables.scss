@@ -110,8 +110,8 @@ $transition: all .3s ease-in-out;
 }
 
 .btn--transparent {
-	background: #fff;
-	border-color: #9ccc65;
+	background: transparent;
+	border-color: #fff;
 	color: #333333;
 	&:hover {
 		color: #fff;
