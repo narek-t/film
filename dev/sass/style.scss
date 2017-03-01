@@ -2007,6 +2007,98 @@ body {
 	}
 }
 
+.social__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	li {
+		margin-right: 10px;
+		display: inline-block;
+		vertical-align: middle;
+		width: 48px;
+		height: 48px;
+		position: relative;
+		background: #ebebeb;
+		border-radius: 50%;
+		&:hover {
+			background: #767989;
+		}
+		a {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+		}
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&.fb {
+			span {
+				@include sprite($fb-ico);
+			}
+			&:hover {
+				span {
+					@include sprite($fb-ico-hover);
+				}
+			}
+		}
+		&.twit {
+			span {
+				@include sprite($twit-ico);
+			}
+			&:hover {
+				span {
+					@include sprite($twit-ico-hover);
+				}
+			}
+		}
+		&.in {
+			span {
+				@include sprite($in-ico);
+			}
+			&:hover {
+				span {
+					@include sprite($in-ico-hover);
+				}
+			}
+		}
+		&.gplus {
+			span {
+				@include sprite($gplus-ico);
+			}
+			&:hover {
+				span {
+					@include sprite($gplus-ico-hover);
+				}
+			}
+		}
+		&.pint {
+			span {
+				@include sprite($pint-ico);
+			}
+			&:hover {
+				span {
+					@include sprite($pint-ico-hover);
+				}
+			}
+		}
+		&.mail {
+			span {
+				@include sprite($email-ico);
+			}
+			&:hover {
+				span {
+					@include sprite($email-ico-hover);
+				}
+			}
+		}
+	}
+}
 
 
 
