@@ -1,0 +1,276 @@
+extends _layout
+block content
+	main.main-content
+		.authors__page
+			.authors__page-helper
+				.authors__page-inner
+					.container
+						h1.announcement__title
+							span хотите узнавать о событиях первыми?
+						p.announcement__description Категория текста семантически вызывает ритм. Метафора нивелирует холодный цинизм. Представленный лексико-семантический анализ является психолингвистическим в своей основе, но цикл иллюстрирует сюжетный коммунальный модернизм. Размер отражает урбанистический одиннадцатисложник.
+						form
+							.announcement__form
+								.announcement__input-wrap
+									input.announcement__form-input(type="text" placeholder="Ваше имя")
+									input.announcement__form-input(type="email" placeholder="Ваш Email")
+								.links-wrap
+									input.btn.btn--yellow(type="submit" value="Подписаться")
+						
+		.calendar-wrapper
+			.large-container
+				.calendar-wrapper__inner
+					.random-quote
+						.random-quote__text "Пойду на фильм еще раз и возьму своих друзей" 
+						.random-quote__author Аня, 8 лет
+					.random-quote
+						.random-quote__text "Отличный фильм"
+						.random-quote__author Дима, 8 лет
+					.random-quote
+						img(src="img/blog-crow1.png", alt="")
+						.random-quote__text "Это просто волшебная сказка!" 
+						.random-quote__author Мама Пети
+					img.blog-crow2(src="img/blog-crow2.png", alt="")
+					.container
+						.calendar
+							.calendar__title.cf
+								p.heading календарь событий,
+									span март 2017
+								.links-wrap
+									a.prev__link(href="#")
+									a.next__link(href="#")
+							.calendar__list
+								.calendar__list-item.active
+									.calendar__item-top.cf(style="border-color: #4dbc8c")
+										img.calendar__img(src="img/calendar-mini.png", alt="")
+										.calendar__date
+											span.day 22
+											span.month января
+										.calendar__descr
+											p.title Выставка содружества художников-иллюстраторов «Волшебная пила»
+											span.hour 16:00 - 20:00
+											span.loc Краснодар, улица Ленина, 225, Зал Дома Офицеров
+											p.pay Вход:
+												span Бесплатный
+									.calendar__item-content
+										img(src="img/calendar-big-img.jpg", alt="")
+										.big-date-wrapper
+											.big-date-col
+												p.big-date дата проведения
+													span Вторник, 16:00 - 20:00
+											.big-date-col
+												p.big-loc Адрес
+													span Санкт-Петербург, Васильевский остров, 225
+										.map-area
+											#map_canvas.map
+										.social-area
+								.calendar__list-item
+									.calendar__item-top.cf(style="border-color: #4dbc8c")
+										img.calendar__img(src="img/calendar-mini.png", alt="")
+										.calendar__date
+											span.day 22
+											span.month января
+										.calendar__descr
+											p.title Выставка содружества художников-иллюстраторов «Волшебная пила»
+											span.hour 16:00 - 20:00
+											span.loc Краснодар, улица Ленина, 225, Зал Дома Офицеров
+											p.pay Вход:
+												span Бесплатный
+									.calendar__item-content
+										img(src="img/calendar-big-img.jpg", alt="")
+										.big-date-wrapper
+											.big-date-col
+												p.big-date дата проведения
+													span Вторник, 16:00 - 20:00
+											.big-date-col
+												p.big-loc Адрес
+													span Санкт-Петербург, Васильевский остров, 225
+										.map-area
+											#map_canvas2.map
+										.social-area
+								.calendar__list-item
+									.calendar__item-top.cf(style="border-color: #f69461")
+										img.calendar__img(src="img/calendar-mini.png", alt="")
+										.calendar__date
+											span.day 22
+											span.month января
+										.calendar__descr
+											p.title Выставка содружества художников-иллюстраторов «Волшебная пила»
+											span.hour 16:00 - 20:00
+											span.loc Краснодар, улица Ленина, 225, Зал Дома Офицеров
+											p.pay Вход:
+												span Бесплатный
+									.calendar__item-content
+										img(src="img/calendar-big-img.jpg", alt="")
+										.big-date-wrapper
+											.big-date-col
+												p.big-date дата проведения
+													span Вторник, 16:00 - 20:00
+											.big-date-col
+												p.big-loc Адрес
+													span Санкт-Петербург, Васильевский остров, 225
+										.map-area
+											#map_canvas3.map
+										.social-area
+								.calendar__list-item
+									.calendar__item-top.cf(style="border-color: #9ccc65")
+										img.calendar__img(src="img/calendar-mini.png", alt="")
+										.calendar__date
+											span.day 22
+											span.month января
+										.calendar__descr
+											p.title Выставка содружества художников-иллюстраторов «Волшебная пила»
+											span.hour 16:00 - 20:00
+											span.loc Краснодар, улица Ленина, 225, Зал Дома Офицеров
+											p.pay Вход:
+												span Бесплатный
+									.calendar__item-content
+										img(src="img/calendar-big-img.jpg", alt="")
+										.big-date-wrapper
+											.big-date-col
+												p.big-date дата проведения
+													span Вторник, 16:00 - 20:00
+											.big-date-col
+												p.big-loc Адрес
+													span Санкт-Петербург, Васильевский остров, 225
+										.map-area
+											#map_canvas4.map
+										.social-area
+								.calendar__list-item
+									.calendar__item-top.cf(style="border-color: #ffe578")
+										img.calendar__img(src="img/calendar-mini.png", alt="")
+										.calendar__date
+											span.day 22
+											span.month января
+										.calendar__descr
+											p.title Выставка содружества художников-иллюстраторов «Волшебная пила»
+											span.hour 16:00 - 20:00
+											span.loc Краснодар, улица Ленина, 225, Зал Дома Офицеров
+											p.pay Вход:
+												span Бесплатный
+									.calendar__item-content
+										img(src="img/calendar-big-img.jpg", alt="")
+										.big-date-wrapper
+											.big-date-col
+												p.big-date дата проведения
+													span Вторник, 16:00 - 20:00
+											.big-date-col
+												p.big-loc Адрес
+													span Санкт-Петербург, Васильевский остров, 225
+										.map-area
+											#map_canvas5.map
+										.social-area
+
+		.home-news
+			h2.home-news__title новости
+			.home-news__list
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg1.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg2.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg3.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg1.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg2.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg1.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg2.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg3.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg1.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+				.home-news__list-item
+					a.full-link(href="#")
+					.holder(style="background-image: url(img/newsbg2.jpg)")
+						.inner
+							.description
+								p.heading эпизод “поднятие александрийской колонны”
+								p.descr Lorem ipsum dolor sit amet! <br>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam :)<br>Duis aute irure dolor in reprehenderit in voluptate.
+
+
+
+block inlineScripts
+	script.
+		var map,map2,map3,map4,map5;
+
+		var myOptions = {
+			zoom: 6,
+			center: new google.maps.LatLng(51, -1),
+		}
+
+		var myOptions2 = {
+			zoom: 4,
+			center: new google.maps.LatLng(53, -2),
+		}
+		var myOptions3 = {
+			zoom: 6,
+			center: new google.maps.LatLng(51, -1),
+		}
+
+		var myOptions4 = {
+			zoom: 4,
+			center: new google.maps.LatLng(53, -2),
+		}
+		var myOptions5 = {
+			zoom: 4,
+			center: new google.maps.LatLng(53, -2),
+		}
+
+		map = new google.maps.Map(document.getElementById("map_canvas"),
+		myOptions);
+
+		map2 = new google.maps.Map(document.getElementById("map_canvas2"),
+		myOptions2);
+		map3 = new google.maps.Map(document.getElementById("map_canvas3"),
+		myOptions3);
+		map4 = new google.maps.Map(document.getElementById("map_canvas4"),
+		myOptions4);
+		map5 = new google.maps.Map(document.getElementById("map_canvas5"),
+		myOptions5);
