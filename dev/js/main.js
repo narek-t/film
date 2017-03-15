@@ -2,8 +2,11 @@ $(document).ready(function() {
 	$('.header-slider').slick({
 		arrows: false,
 		dots: true,
+		adaptiveHeight: true
 	});
-	$('.home-slider__trailer').slick();
+	$('.home-slider__trailer').slick({
+
+	});
 
 	$('.makers__list').magnificPopup({
 		fixedContentPos: true,
@@ -14,6 +17,18 @@ $(document).ready(function() {
 		gallery: {
 			enabled: true
 		},
+	});
+
+	$('.toggle-mobile').click(function(event) {
+		event.preventDefault();
+		$('.main-menu').addClass('visible');
+		$('body').addClass('overflowed');
+	});
+
+	$('.close-menu').click(function(event) {
+		event.preventDefault();
+		$('.main-menu').removeClass('visible');
+		$('body').removeClass('overflowed');
 	});
 
 
