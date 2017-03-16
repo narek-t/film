@@ -1299,6 +1299,7 @@ body {
 		@media screen and (max-width: 1000px) {
 			padding-top: 20px;
 			padding-bottom: 20px;
+			background-size: cover;
 		}
 	}
 	&-inner {
@@ -1328,6 +1329,12 @@ body {
 	padding: 0;
 	.blog__item-description {
 		padding: 30px 120px;
+		@media screen and (max-width: 1000px) {
+			padding: 20px;
+		}
+		@media screen and (max-width: 650px) {
+			padding: 20px 0 20px;
+		}
 	}
 	.btn {
 		margin: 0;
@@ -1345,11 +1352,20 @@ body {
 	margin-top: 50px;
 	.blog__item {
 		width: 50%;
+		@media screen and (max-width: 650px) {
+			width: 100%;
+		}
 		&:nth-child(odd) {
 			padding-right: 20px;
+			@media screen and (max-width: 650px) {
+				padding: 0;
+			}
 		}
 		&:nth-child(even) {
 			padding-left: 20px;
+			@media screen and (max-width: 650px) {
+				padding: 0;
+			}
 		}
 	}
 }
@@ -1409,6 +1425,9 @@ body {
 		padding-bottom: 80px;
 		margin-bottom: 20px;
 		padding-top: 80px;
+		@media screen and (max-width: 1000px) {
+			background-size: cover;
+		}
 	}
 	&-inner {
 		transform: rotate(-1deg);
@@ -1435,6 +1454,9 @@ body {
 			width: 240px;
 			margin-bottom: 15px;
 			position: relative;
+			@media screen and (max-width: 550px) {
+				width: 100%;
+			}
 			img {
 				display: block;
 				max-width: 100%;
@@ -1483,9 +1505,16 @@ body {
 	}
 	p {
 		font: 400 14px/22px $gotham;
+		@media screen and (max-width: 1000px) {
+			font-size: 12px;
+			line-height: 18px;
+		}
 	}
 	.btn {
 		margin: 0;
+	}
+	@media screen and (max-width: 1000px) {
+		padding: 20px 40px;
 	}
 }
 
@@ -1499,10 +1528,16 @@ body {
 		&.mfp-arrow-left {
 			background: url(../img/popup-arr-l.png) no-repeat;
 			left: 50px;
+			@media screen and (max-width: 1000px) {
+				left: 15px;
+			}
 		}
 		&.mfp-arrow-right {
 			background: url(../img/popup-arr-r.png) no-repeat;
 			right: 50px;
+			@media screen and (max-width: 1000px) {
+				right: 30px;
+			}
 		}
 	}
 }
@@ -1609,6 +1644,9 @@ body {
 		position: absolute;
 		left: -100px;
 		bottom: -100px;
+		@media screen and (max-width: 1000px) {
+			display: none;
+		}
 	}
 }
 
@@ -1618,11 +1656,21 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: flex-end;
+	@media screen and (max-width: 1000px) {
+		justify-content: space-around;
+	}
 	&-item {
 		position: relative;
 		width: 25%;
 		text-align: center;
 		margin-bottom: 20px;
+		@media screen and (max-width: 1000px) {
+			padding: 0 10px;
+			width: 33%;
+		}
+		@media screen and (max-width: 550px) {
+			width: 50%;
+		}
 		.full-link {
 			position: absolute;
 			width: 100%;
@@ -1636,6 +1684,9 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@media screen and (max-width: 550px) {
+			height: 150px;
+		}
 		img {
 			display: block;
 			max-width: 100%;
@@ -1662,6 +1713,9 @@ body {
 			position: absolute;
 			bottom: 0;
 			left: -100px;
+			@media screen and (max-width: 1000px) {
+				display: none;
+			}
 		}
 	}
 }
@@ -1681,10 +1735,19 @@ body {
 .book-slider__data {
 	padding: 0 55px;
 	position: relative;
+	@media screen and (max-width: 1000px) {
+		padding: 0 25px;
+	}
 }
 
 .book-slider__item {
 	position: relative;
+	@media screen and (max-width: 1000px) {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
 }
 
 .book-slider__item-text {
@@ -1698,6 +1761,9 @@ body {
 	text-align: center;
 	font: 700 20px $bebas;
 	color: #fff;
+	@media screen and (max-width: 1000px) {
+		font-size: 16px;
+	}
 }
 
 .book-slider  .slick-arrow {
@@ -1726,11 +1792,20 @@ body {
 	padding: 0 55px;
 	position: relative;
 	margin-top: 50px;
+	@media screen and (max-width: 1000px) {
+		padding: 0 25px;
+	}
 	.slick-slide {
 		margin: 0 27px;
+		@media screen and (max-width: 1000px) {
+			margin: 0 10px;
+		}
 	}
 	.slick-list {
 		margin: 0 -27px;
+		@media screen and (max-width: 1000px) {
+			margin: 0 -10px;
+		}
 	}
 }
 
@@ -1742,6 +1817,9 @@ body {
 		position:relative;
 		height: 235px;
 		width: 100%;
+		@media screen and (max-width: 1000px) {
+			height: 150px;
+		}
 		&-inner {
 			position: absolute;
 			width: 100%;
@@ -1788,6 +1866,16 @@ body {
 	p {
 		font: italic 16px $gotham;
 	}
+	@media screen and (max-width: 1000px) {
+		padding: 20px 30px;
+		background-image: none;
+		.heading {
+			font-size: 17px;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
 }
 
 .book-offers {
@@ -1799,10 +1887,25 @@ body {
 	.offers__list {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		justify-content: space-around;
 		&-item {
 			width: 240px;
+		}
+		@media screen and (max-width: 1000px) {
+			flex-wrap: wrap;
+			justify-content: center;
+			&-item {
+				width: 50%;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+
+		@media screen and (max-width: 550px) {
+			&-item {
+				width: 100%;
+			}
 		}
 	}
 	.links-wrap {
@@ -1933,6 +2036,19 @@ body {
 	margin: 70px 0 0;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: 0;
+	@media screen and (max-width: 1000px) {
+		flex-wrap: wrap;
+		li {
+			width: 50%;
+			padding: 0 15px;
+		}
+	}
+	@media screen and (max-width: 550px) {
+		li {
+			width: 100%;
+		}
+	}
 	.heading {
 		font: 700 24px $bebas;
 		margin: 0 0 15px;
@@ -2003,11 +2119,24 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	list-style-type: none;
+	@media screen and (max-width: 1000px) {
+		justify-content: space-around;
+	}
 	li {
 		text-align: center;
 		width: 240px;
 		margin-bottom: 35px;
 		position: relative;
+		@media screen and (max-width: 1000px) {
+			width: 33%;
+			padding: 0 5px;
+		}
+		@media screen and (max-width: 650px) {
+			width: 50%;
+		}
+		@media screen and (max-width: 550px) {
+			width: 100%;
+		}
 	}
 	img {
 		display: block;
@@ -2050,6 +2179,9 @@ body {
 	bottom: 0;
 	left: -100px;
 	max-width: 400px;
+	@media screen and (max-width: 1360px) {
+		display: none;
+	}
 }
 
 .gallery__tabs__inner {
@@ -2091,6 +2223,14 @@ body {
 	&-item {
 		width: 48%;
 		margin-bottom: 30px;
+		@media screen and (max-width: 650px) {
+			width: 100%;
+		}
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
 		.title {
 			font: 700 20px $bebas;
 			text-transform: uppercase;
@@ -2113,6 +2253,11 @@ body {
 	}
 	.authors__page-helper {
 		padding: 45px 0;
+	}
+	@media screen and (max-width: 1000px) {
+		.authors__page-inner {
+			transform: none;
+		}
 	}
 }
 
@@ -2139,6 +2284,9 @@ body {
 		top: 50%;
 		left: -100px;
 		max-width: 450px;
+		@media screen and (max-width: 1790px) {
+			display: none;
+		}
 	}
 	.random-quote:first-of-type {
 		left: 0;
@@ -2157,6 +2305,9 @@ body {
 	}
 	.persons__list {
 		padding: 0 50px;
+		@media screen and (max-width: 1000px) {
+			padding: 0;
+		}
 	}
 	.links-wrap {
 		margin-top: 40px;
@@ -2166,15 +2317,30 @@ body {
 
 .history__page-helper {
 	background: url(../img/history-bg.jpg) bottom center no-repeat;
+	@media screen and (max-width: 1000px) {
+		background-size: cover;
+		margin-left: 0;
+		transform: none;
+	}
 }
 
 .gift-wrapper {
 	img {
 		float: left;
+		@media screen and (max-width: 1000px) {
+			float: none;
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin: auto;
+		}
 	}
 	.gift-description {
 		margin-left: 470px;
 		margin-top: 50px;
+		@media screen and (max-width: 1000px) {
+			margin-left: 0;
+		}
 	}
 	.note {
 		display: block;
@@ -2206,6 +2372,9 @@ body {
 	.links-wrap {
 		text-align: center;
 		margin: 50px 0 0;
+		@media screen and (max-width: 650px) {
+			margin-top: 15px;
+		}
 		input {
 			cursor: pointer;
 		}
@@ -2217,6 +2386,13 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	@media screen and (max-width: 650px) {
+		display: block;
+		input {
+			width: 100%;
+			margin: 0 0 15px;
+		}
+	}
 	input {
 		display: block;
 		width: 48%;
@@ -2232,6 +2408,11 @@ body {
 .calendar-wrapper {
 	background: url(../img/header-paper.png) bottom -110px center no-repeat;
 	padding: 75px 0 150px;
+	@media screen and (max-width: 650px) {
+		.container {
+			padding: 0;
+		}
+	}
 }
 
 .calendar-wrapper__inner {
@@ -2255,6 +2436,14 @@ body {
 		bottom: 0;
 		left: -80px;
 	}
+	@media screen and (max-width: 1790px) {
+		.blog-crow2,
+		.random-quote:nth-of-type(3),
+		.random-quote:nth-of-type(2),
+		.random-quote:nth-of-type(1) {
+			display: none;
+		}
+	}
 }
 .calendar-wrapper+.home-news {
 	margin-top: -120px;
@@ -2267,11 +2456,21 @@ body {
 		float: left;
 		font: 700 40px $bebas;
 		margin: 0;
+		@media screen and (max-width: 650px) {
+			font-size: 30px;
+			float: none;
+			text-align: center;
+		}
 	}
 	.links-wrap {
 		float: left;
 		margin-left: 30px;
 		margin-top: 7px;
+		@media screen and (max-width: 650px) {
+			margin: 20px auto 0;
+			float: none;
+			text-align: center;
+		}
 		a {
 			display: inline-block;
 			vertical-align: middle;
@@ -2303,6 +2502,9 @@ body {
 	&:hover {
 		background: #cbcee3;
 	}
+	@media screen and (max-width: 650px) {
+		padding: 15px;
+	}
 }
 
 .calendar__img {
@@ -2332,12 +2534,19 @@ body {
 	.title {
 		margin: 0 0 10px;
 		font: 700 24px $bebas;
+		@media screen and (max-width: 650px) {
+			font-size: 18px;
+			margin-top: 10px;
+		}
 	}
 	span {
 		font: 300 12px $gotham;
 		display: inline-block;
 		vertical-align: middle;
 		padding-left: 20px;
+		@media screen and (max-width: 650px) {
+			display: block;
+		}
 	}
 	.hour {
 		background: url(../img/hour-small.png) left center no-repeat;
@@ -2345,6 +2554,10 @@ body {
 	.loc {
 		background: url(../img/loc-small.png) left center no-repeat;
 		margin-left: 20px;
+		@media screen and (max-width: 650px) {
+			margin-left: 0;
+			margin-top: 10px;
+		}
 	}
 	.pay {
 		margin: 0;
@@ -2352,6 +2565,13 @@ body {
 		font-weight: 300;
 		font-size: 12px;
 		font-family: $gotham;
+		@media screen and (max-width: 650px) {
+			margin-top: 10px;
+		}
+		
+		span {
+			display: inline-block;
+		}
 	}
 }
 
@@ -2371,10 +2591,18 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	@media screen and (max-width: 650px) {
+		display: block;
+		padding: 15px;
+	}
 }
 
 .big-date-col {
 	width: 50%;
+	@media screen and (max-width: 650px) {
+		width: 100%;
+		margin-bottom: 10px;
+	}
 	p {
 		margin: 0;
 		font: 700 24px $bebas;
@@ -2414,6 +2642,9 @@ body {
 .social-area {
 	background: #f5f5f5;
 	padding: 30px 40px;
+	@media screen and (max-width: 650px) {
+		padding: 15px;
+	}
 }
 
 
@@ -2438,6 +2669,9 @@ body {
 		position: relative;
 		background: #ebebeb;
 		border-radius: 50%;
+		@media screen and (max-width: 650px) {
+			margin-bottom: 10px;
+		}
 		&:hover {
 			background: #767989;
 		}

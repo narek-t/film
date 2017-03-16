@@ -4,9 +4,7 @@ $(document).ready(function() {
 		dots: true,
 		adaptiveHeight: true
 	});
-	$('.home-slider__trailer').slick({
-
-	});
+	$('.home-slider__trailer').slick();
 
 	$('.makers__list').magnificPopup({
 		fixedContentPos: true,
@@ -17,7 +15,17 @@ $(document).ready(function() {
 		gallery: {
 			enabled: true
 		},
+		callbacks: {
+			change: function() {
+				setTimeout(function() {
+					$('.single-slider__thumbs').slick('setPosition');
+				}, 10);
+				console.log('changed')
+			},
+		}
 	});
+
+	
 
 	$('.toggle-mobile').click(function(event) {
 		event.preventDefault();
@@ -35,7 +43,21 @@ $(document).ready(function() {
 	$('.single-slider__thumbs').slick({
 		infinite: true,
 		slidesToShow: 5,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+		    {
+		      breakpoint: 800,
+		      settings: {
+		        slidesToShow: 3,
+		      }
+		    },
+		     {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		]
 	});
 	$('.single-slider__thumbs .img-wrap').click(function(event) {
 		var src = $(this).data('src');
@@ -58,6 +80,20 @@ $(document).ready(function() {
 		asNavFor: '.book-slider__inner',
 		focusOnSelect: true,
 		arrows: false,
+		responsive: [
+		    {
+		      breakpoint: 1000,
+		      settings: {
+		        slidesToShow: 3,
+		      }
+		    },
+		     {
+		      breakpoint: 700,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		]
 	});
 
 	$('.book-slider__data').slick();
